@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Articles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                     animation: {
+                        fadeIn: 'fadeIn 1s ease-in-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: 0, transform: 'translateY(20px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <nav class="py-6">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center items-center">
+                <div class="flex space-x-2 sm:space-x-4">
+                    <a href="index.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="projects.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                    <a href="articles.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Articles</a>
+                    <a href="contact.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="page-content" class="opacity-0 transition-opacity duration-1000 ease-in-out">
+        <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 animate-fadeIn">
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-12 text-center">Thoughts & Insights</h1>
+            
+            <div class="space-y-10">
+                <article class="p-6 rounded-lg transition-shadow duration-300">
+                    <header>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-2">
+                            <a href="#" class="hover:text-indigo-600">The Rise of Serverless Architectures</a>
+                        </h2>
+                        <p class="text-sm text-gray-500 mb-3">Published on: May 01, 2025 &bull; 7 min read</p>
+                    </header>
+                    <div class="prose prose-lg text-gray-600">
+                        <p>
+                            Serverless computing is rapidly changing how we build and deploy applications. In this article, I explore the benefits, drawbacks, and best use cases for serverless architectures, drawing from my experiences with AWS Lambda and Azure Functions...
+                        </p>
+                    </div>
+                    <a href="#" class="inline-block mt-4 text-indigo-600 hover:text-indigo-800 font-medium">Read More &rarr;</a>
+                </article>
+
+                <article class="p-6 rounded-lg transition-shadow duration-300">
+                    <header>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-2">
+                            <a href="#" class="hover:text-indigo-600">Mastering Asynchronous JavaScript</a>
+                        </h2>
+                        <p class="text-sm text-gray-500 mb-3">Published on: April 15, 2025 &bull; 10 min read</p>
+                    </header>
+                    <div class="prose prose-lg text-gray-600">
+                        <p>
+                            Callbacks, Promises, Async/Await - navigating asynchronous operations in JavaScript can be tricky. This guide breaks down these concepts with practical examples, helping you write cleaner and more efficient non-blocking code...
+                        </p>
+                    </div>
+                    <a href="#" class="inline-block mt-4 text-indigo-600 hover:text-indigo-800 font-medium">Read More &rarr;</a>
+                </article>
+
+                <article class="p-6 rounded-lg transition-shadow duration-300">
+                    <header>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-2">
+                            <a href="#" class="hover:text-indigo-600">The Importance of Database Indexing</a>
+                        </h2>
+                        <p class="text-sm text-gray-500 mb-3">Published on: March 28, 2025 &bull; 6 min read</p>
+                    </header>
+                    <div class="prose prose-lg text-gray-600">
+                        <p>
+                            Slow database queries can cripple an application. Learn how proper database indexing can dramatically improve performance, and explore different types of indexes and when to use them...
+                        </p>
+                    </div>
+                    <a href="#" class="inline-block mt-4 text-indigo-600 hover:text-indigo-800 font-medium">Read More &rarr;</a>
+                </article>
+                
+                <div class="text-center mt-12">
+                    <p class="text-gray-500">More articles coming soon. Check back later!</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
