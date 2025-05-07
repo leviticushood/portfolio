@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                     animation: {
+                        fadeIn: 'fadeIn 1s ease-in-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: 0, transform: 'translateY(20px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <nav class="py-6">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center items-center">
+                <div class="flex space-x-2 sm:space-x-4">
+                    <a href="index.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="projects.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                    <a href="articles.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Articles</a>
+                    <a href="contact.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="page-content" class="opacity-0 transition-opacity duration-1000 ease-in-out">
+        <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 animate-fadeIn">
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-8 text-center">About Me</h1>
+            <div class="prose prose-lg mx-auto text-gray-600">
+                <p>
+                    Welcome to my personal space on the web! I'm a passionate full-stack developer with a knack for building intuitive and performant web and mobile applications. My journey into the world of code started with a simple "Hello, World!" and has since evolved into a deep-seated love for solving complex problems and crafting elegant digital experiences.
+                </p>
+                <p>
+                    My expertise lies primarily in backend development, particularly with Node.js and its ecosystem. I've had the privilege of working on diverse projects, building scalable, secure, and reliable systems. I'm proficient in various frameworks and technologies, always eager to adapt and learn what's new and effective.
+                </p>
+                <p>
+                    Beyond the backend, I'm also comfortable navigating the frontend, ensuring that user interfaces are not just functional but also delightful to use. I believe in the power of clean code, adhering to best practices and industry standards to deliver high-quality software.
+                </p>
+                <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">My Philosophy</h2>
+                <p>
+                    I approach development with a mindset of continuous improvement and collaboration. I enjoy working in teams, sharing knowledge, and contributing to a positive and productive environment. For me, coding is not just a job; it's a craft that requires dedication, creativity, and a constant pursuit of excellence.
+                </p>
+                <h2 class="text-2xl font-semibold text-gray-800 mt-10 mb-4">Amateur Astronaut?</h2>
+                <p>
+                    Ah, yes! While my days are filled with code, my nights are often spent gazing at the stars. Astronomy is a profound passion of mine. The vastness of the universe, the intricate dance of celestial bodies, and the endless quest for discovery captivate my imagination. It's a humbling reminder of how much there is to learn and explore, both in the digital realm and beyond our atmosphere. This "amateur astronaut" title is a nod to my dreams and my belief in reaching for the stars, quite literally!
+                </p>
+                <p>
+                    I'm always open to new challenges, collaborations, and opportunities to grow. Feel free to explore my projects and articles, and don't hesitate to get in touch!
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
