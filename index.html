@@ -1,86 +1,83 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        fadeIn: 'fadeIn 1s ease-in-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: 0, transform: 'translateY(20px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
 
-        <!--==================== UNICONS ====================-->
-        
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+    <nav class="py-6">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center items-center">
+                <div class="flex space-x-2 sm:space-x-4">
+                    <a href="index.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="projects.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                    <a href="articles.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Articles</a>
+                    <a href="contact.html" class="nav-link text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+    <div id="page-content" class="opacity-0 transition-opacity duration-1000 ease-in-out">
+        <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+            <div class="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-12">
+                <div class="w-full md:w-1/2 animate-fadeIn" style="animation-delay: 0.2s;">
+                    <img src="images/avatar.png" alt="Avatar" class="w-20 h-20 rounded-full mb-6 shadow-md" onerror="this.src='https://placehold.co/80x80/E0E0E0/B0B0B0?text=Avatar'; this.onerror=null;">
+                    <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                        Full-stack web and mobile app developer, and amateur astronaut.
+                    </h1>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.
+                    </p>
+                    <div class="flex space-x-6 items-center">
+                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                         <a href="#" class="text-gray-500 hover:text-indigo-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
-            </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
-
-            </section>
-
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
-
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-
-            </section>
+                <div class="w-full md:w-1/2 flex justify-center md:justify-end animate-fadeIn" style="animation-delay: 0.4s;">
+                    <img src="images/IMG_8939.jpg" alt="Developer portrait" class="rounded-tl-3xl rounded-br-3xl shadow-2xl w-full max-w-md md:max-w-lg h-auto object-cover" onerror="this.src='https://placehold.co/600x800/CCCCCC/FFFFFF?text=Main+Image+Not+Found'; this.onerror=null;">
+                </div>
+            </div>
         </main>
+    </div>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
-
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
-
-        <!--==================== MAIN JS ====================-->
-        <script src=""></script>
-    </body>
+    <script src="js/script.js"></script>
+</body>
 </html>
