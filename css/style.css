@@ -1,0 +1,43 @@
+/* Custom Styles (minimal, as Tailwind CSS is used) */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Active navigation link style (alternative to JS if preferred for base styling) */
+/* For JS-driven active state, this can be a fallback or removed */
+/* .nav-link.active {
+    color: #4f46e5; /* indigo-700 */
+/* background-color: #e0e7ff; /* indigo-100 */
+/* } */
+
+/* Ensure content is hidden initially if JS is disabled and we rely on JS for fade-in */
+/* #page-content.opacity-0 {
+    opacity: 0;
+} */
+
+/* If using CSS keyframes directly for fade-in instead of Tailwind's JIT animation */
+/*
+.fade-in-element {
+    animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+*/
+
+/* Prose styles for article pages if not fully covered by Tailwind Typography plugin */
+.prose h2 {
+    font-size: 1.5em; /* Example */
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
